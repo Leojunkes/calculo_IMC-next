@@ -30,16 +30,16 @@ export default function Home() {
 
   const tabelaIMCm = (
     <Flex>
-      <Table>
+      <Table size="sm">
         <Thead>
-          <Tr>
-            <Th>IMC</Th>
-            <Th>Classificação</Th>
-            <Th>Obesidade(Grau)</Th>
+          <Tr color='white'>
+            <Th color="white">IMC</Th>
+            <Th color="white">Classificação</Th>
+            <Th color="white">Obesidade(Grau)</Th>
           </Tr>
         </Thead>
         <Tbody>
-          <Tr bg="green">
+          <Tr color="black" bg="#abf45b">
             <Td>menor que 18,5</Td>
             <Td>Magreza</Td>
             <Td>0</Td>
@@ -51,12 +51,12 @@ export default function Home() {
 
   const tabelaIMCms = (
     <Flex>
-      <Table>
-        <Thead>
-          <Tr>
-            <Th>IMC</Th>
-            <Th>Classificação</Th>
-            <Th>Obesidade(Grau)</Th>
+      <Table size="sm">
+        <Thead >
+          <Tr color='white'>
+            <Th color="white">IMC</Th>
+            <Th color="white">Classificação</Th>
+            <Th color="white">Obesidade(Grau)</Th>
           </Tr>
         </Thead>
         <Tbody>
@@ -65,10 +65,10 @@ export default function Home() {
             <Td>Magreza</Td>
             <Td>0</Td>
           </Tr> */}
-          <Tr bg="green">
-            <Td>entre 18,5 e 24,9</Td>
-            <Td>Magreza Saudável</Td>
-            <Td>0</Td>
+          <Tr color="black" bg="#abf45b">
+            <Td>ENTRE <b>18,5</b> E <b>24,9</b></Td>
+            <Td>MAGREZA SAUDÁVEL</Td>
+            <Td><b>0</b></Td>
           </Tr>
         </Tbody>
       </Table>
@@ -77,19 +77,19 @@ export default function Home() {
 
   const tabelaIMCsobrepeso = (
     <Flex>
-      <Table>
-        <Thead>
-          <Tr>
-            <Th>IMC</Th>
-            <Th>Classificação</Th>
-            <Th>Obesidade(Grau)</Th>
+      <Table size="sm">
+        <Thead >
+          <Tr >
+            <Th color="white">IMC</Th>
+            <Th color="white">Classificação</Th>
+            <Th color="white">Obesidade(Grau)</Th>
           </Tr>
         </Thead>
-        <Tbody>
-          <Tr bg="green">
-            <Td>entre 25 e 29.9</Td>
-            <Td>Sobrepeso</Td>
-            <Td>1</Td>
+        <Tbody w="2rem">
+          <Tr color="black" bg="#abf45b">
+            <Td>ENTRE <b>25</b> E <b>29.9</b></Td>
+            <Td>SOBREPESO</Td>
+            <Td><b>1</b></Td>
           </Tr>
         </Tbody>
       </Table>
@@ -98,19 +98,19 @@ export default function Home() {
 
   const tabelaIMCOb2 = (
     <Flex>
-      <Table>
-        <Thead>
-          <Tr>
-            <Th>IMC</Th>
-            <Th>Classificação</Th>
-            <Th>Obesidade(Grau)</Th>
+      <Table size="sm">
+        <Thead >
+          <Tr >
+            <Th color="white">IMC</Th>
+            <Th color="white">Classificação</Th>
+            <Th color="white">Obesidade(Grau)</Th>
           </Tr>
         </Thead>
         <Tbody>
-          <Tr bg="green">
-            <Td>entre 30 e 39.9</Td>
-            <Td>obesidade</Td>
-            <Td>2</Td>
+          <Tr color="black" bg="#abf45b">
+            <Td>ENTRE <b>30</b> E <b>39.9</b></Td>
+            <Td>OBESIDADE</Td>
+            <Td><b>2</b></Td>
           </Tr>
         </Tbody>
       </Table>
@@ -119,19 +119,19 @@ export default function Home() {
 
   const tabelaIMCOb3 = (
     <Flex>
-      <Table>
+      <Table size="md">
         <Thead>
           <Tr>
-            <Th>IMC</Th>
-            <Th>Classificação</Th>
-            <Th>Obesidade(Grau)</Th>
+            <Th color="white">IMC</Th>
+            <Th color="white">Classificação</Th>
+            <Th color="white">Obesidade(Grau)</Th>
           </Tr>
         </Thead>
         <Tbody>
-          <Tr bg="green">
-            <Td>maior que 40</Td>
-            <Td>obesidade Grave!</Td>
-            <Td>3</Td>
+          <Tr  bg="#abf45b">
+            <Td color="black">MAIOR QUE 40</Td>
+            <Td>OBESIDADE MÓRBIDA!</Td>
+            <Td><b>3</b></Td>
           </Tr>
         </Tbody>
       </Table>
@@ -160,6 +160,10 @@ export default function Home() {
     setimcResultado(imc);
   }
 
+  function reload() {
+    window.location.reload();
+  }
+
   return (
     <Flex
       minHeight="100vh"
@@ -182,7 +186,6 @@ export default function Home() {
         type="OnSubmit"
         justifyContent="center"
         bg="Colors.blue"
-        isReadOnly="false"
       >
         <Flex flexDirection="column">
           <Stack>
@@ -253,7 +256,7 @@ export default function Home() {
               value="Limpar Valores"
             />
           </Stack>
-          <Flex justifyContent="center">{text}</Flex>
+          {text}
 
           <FormLabel
             m="auto"
@@ -267,6 +270,17 @@ export default function Home() {
             {imcresultado.toFixed(1)}
           </FormLabel>
         </Flex>
+        <Button
+          onClick={reload}
+          color="gray.900"
+          bg="blue.100"
+          type="button"
+          m="10px auto"
+          w="6rem"
+          size="small"
+        >
+          Refresh
+        </Button>
       </Flex>
     </Flex>
   );
