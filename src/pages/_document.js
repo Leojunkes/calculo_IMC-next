@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
           <link rel="icon" href="" />
           <link
             rel="shortcut icon"
-            href="/imagens/logoLeoflin1.png"
+            href="/imagens/imc.png"
             type="image/png"
           />
            </Head>

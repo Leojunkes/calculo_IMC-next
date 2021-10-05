@@ -12,8 +12,8 @@ import {
 
 export default function Header() {
   return (
-    <Flex justifyContent='center'  height="80px" bg="#294596" color="white" paddingTop="15px">
-      <Flex  ml='50px'>
+    <Flex border='none' justifyContent='center'  height="55px" bg="#294596" color="white" paddingTop="15px">
+      <Flex >
         <Popover>
           <PopoverTrigger>
             <Button bg="#f9bd07"  borderRadius='8px' h="38px" type="button">
