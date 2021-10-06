@@ -3,8 +3,8 @@
 ## Preview
 
 <img src='./public/imagens/imcMont.png' width='400' >
-<img src='./public/imagens/imcCalc.png' width='200' >
-<img src='./public/imagens/imcCalc.png' width='200'>
+<img src='./public/imagens/imcCalc.png' width='400' >
+<img src='./public/imagens/imcCalc.png' width='400'>
 
 ## Sobre o IMC Calc.
 
