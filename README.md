@@ -1,4 +1,4 @@
-# Junkes Cálculadora IMC
+# Junkes Calculadora IMC
 
 ## Preview
 
