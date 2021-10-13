@@ -3,6 +3,9 @@
 ## Preview
 
 <img src='./public/imagens/imcMont.png' width='400' >
+
+### Faça o teste aqui => [Junkes Calc IMC](https://calculo-imc-phi.vercel.app/)
+
 <img src='./public/imagens/imcCalc.png' width='400' >
 <img src='./public/imagens/imcCalc.png' width='400'>
 
