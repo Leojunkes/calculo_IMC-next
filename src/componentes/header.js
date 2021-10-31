@@ -12,18 +12,31 @@ import {
 
 export default function Header() {
   return (
-    <Flex border='none' justifyContent='center'  height="55px" bg="#294596" color="white" paddingTop="15px">
-      <Flex >
+    <Flex
+      border="none"
+      justifyContent="center"
+      height="55px"
+      bg="#294596"
+      color="white"
+      paddingTop="15px"
+    >
+      <Flex>
         <Popover>
           <PopoverTrigger>
-            <Button bg="#f9bd07"  borderRadius='8px' h="38px" type="button">
+            <Button
+              border="none"
+              bg="#f9bd07"
+              borderRadius="8px"
+              h="38px"
+              type="button"
+            >
               IMC o que é?
             </Button>
           </PopoverTrigger>
           <PopoverContent maxWidth="20rem" bg="#e94b1b">
             <PopoverArrow />
             <PopoverCloseButton />
-            <PopoverHeader borderRadius='4' mt="14" color="#231d21">
+            <PopoverHeader borderRadius="4" mt="14" color="#231d21">
               <b>Sobre IMC</b>
             </PopoverHeader>
             <PopoverBody color="#231d21">
